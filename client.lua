@@ -12,6 +12,10 @@ local function drawHud()
     dxDrawText("F1: mesaj göster | F2: HUD aç/kapat", 20, 50, screenW, screenH, tocolor(200, 200, 200, 255), 1.0, "default")
 end
 
+local function onClientResourceStart()
+    outputChatBox("MTA Lua script çalıştı!", 255, 255, 0, true)
+end 
+
 addEventHandler("onClientResourceStart", resourceRoot, function()
     outputChatBox("MTA Lua script çalıştı!", 255, 255, 0, true)
 end)
